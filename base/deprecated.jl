@@ -1272,6 +1272,11 @@ for f in (:airyai, :airyaiprime, :airybi, :airybiprime, :airyaix, :airyaiprimex,
     end
 end
 
+@deprecate_binding LinearIndexing IndexStyle
+@deprecate_binding LinearFast IndexLinear
+@deprecate_binding LinearSlow IndexCartesian
+@deprecate linearindexing IndexStyle
+
 # END 0.6 deprecations
 
 # BEGIN 1.0 deprecations
